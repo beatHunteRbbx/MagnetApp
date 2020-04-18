@@ -57,8 +57,9 @@
                     android:id="@+id/edit_photo"
                     android:layout_width="132dp"
                     android:layout_height="30dp"
-                    android:stateListAnimator="@null"
-                    android:background="@drawable/edit_photo" />
+                    android:background="@drawable/edit_photo"
+                    android:onClick="onUploadPicButtonClick"
+                    android:stateListAnimator="@null" />
 
             </LinearLayout>
 

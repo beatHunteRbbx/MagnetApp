@@ -33,16 +33,17 @@
             android:gravity="center"
 
             >
+
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/login"
                 android:layout_width="match_parent"
-                android:layout_marginStart="35dp"
-                android:layout_marginEnd="25dp"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="9.5dp"
+                android:layout_marginStart="35dp"
                 android:layout_marginLeft="15dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginBottom="9.5dp"
                 android:hint="@string/login"
-                android:inputType="textPersonName">
-            </com.google.android.material.textfield.TextInputEditText>
+                android:inputType="textPersonName"></com.google.android.material.textfield.TextInputEditText>
         </com.google.android.material.textfield.TextInputLayout>
 
 
@@ -57,12 +58,13 @@
             >
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/password"
                 android:layout_width="match_parent"
-                android:layout_marginStart="35dp"
-                android:layout_marginEnd="25dp"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="9.5dp"
+                android:layout_marginStart="35dp"
                 android:layout_marginLeft="15dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginBottom="9.5dp"
                 android:hint="@string/password"
                 android:inputType="textPassword">
 
@@ -70,17 +72,16 @@
             </com.google.android.material.textfield.TextInputEditText>
 
         </com.google.android.material.textfield.TextInputLayout>
-            
-
 
 
         <Button
-            android:id="@+id/button_go"
+            android:id="@+id/button_entry"
             android:layout_width="170dp"
             android:layout_height="55dp"
             android:layout_marginTop="30dp"
-            android:stateListAnimator="@null"
-            android:background="@drawable/button_run" />
+            android:background="@drawable/button_run"
+            android:onClick="onEntryButtonClick"
+            android:stateListAnimator="@null" />
 
     </LinearLayout>
 
